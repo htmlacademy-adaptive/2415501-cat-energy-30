@@ -6,13 +6,22 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml" sizes="32x32">
+  <link rel="apple-touch-icon" href="favicons/180.png" sizes="180x180">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a href="/">
-      <img src="images/icons/logotype.svg" width="33" height="38" alt="Кэт энерджи.">
+      <picture>
+        <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+        <img src="images/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи.">
+      </picture>
       <img src="images/icons/logotype-name.svg" width="101" height="18" alt="Кэт энерджи.">
     </a>
     <nav class="main-nav nav">
@@ -46,13 +55,15 @@
           <ul class="form__list">
             <li class="form__control">
               <label class="form__label">
-                <input class="form__control--input" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
+                <input class="form__control--input" type="text" id="cat-name" name="cat-name" placeholder="барсик"
+                  required>
                 <span class="form__control--text">ИМЯ:*</span>
               </label>
             </li>
             <li class="form__control">
               <label class="form__label">
-                <input class="form__control--input" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
+                <input class="form__control--input" type="number" id="cat-weight" name="cat-weight" placeholder="7"
+                  required>
                 <span class="form__control--text">Вес (кг):*</span>
               </label>
             </li>
@@ -95,15 +106,15 @@
           <ul class="form__list">
             <li class="form__control">
               <label class="form__label">
-                <input class="form__control--input" type="email" id="email" name="email" placeholder="kuklachev@gmail.coml"
-                  required>
+                <input class="form__control--input" type="email" id="email" name="email"
+                  placeholder="kuklachev@gmail.coml" required>
                 <span class="form__control--text">E-mail:*</span>
               </label>
             </li>
             <li class="form__control">
               <label class="form__label">
-                <input class="form__control--input" type="tel" id="telephone" name="telephone" placeholder="8 (960) 900-60-90"
-                  required>
+                <input class="form__control--input" type="tel" id="telephone" name="telephone"
+                  placeholder="8 (960) 900-60-90" required>
                 <span class="form__control--text">Телефон:*</span>
               </label>
             </li>
@@ -111,7 +122,8 @@
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Комментарий</legend>
-          <textarea clas="form__control--textarea" name="text" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea clas="form__control--textarea" name="text"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Дополнительно</legend>
@@ -160,7 +172,7 @@
         <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="contacts__map map">
-        <img src="images/map.jpg" alt="Наше местонахождение." width="320" height="362">
+        <iframe name="map" alt="Наше местонахождение." width="320" height="362"></iframe>
       </div>
     </section>
     <a class="page-footer__logo" href="/">
