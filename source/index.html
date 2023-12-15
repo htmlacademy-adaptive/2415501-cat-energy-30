@@ -6,16 +6,24 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml" sizes="32x32">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
+
 <body class="page__body">
   <header class="main-header">
     <a href="/">
-      <img src="images/icons/logotype.svg" width="33" height="38" alt="Кэт энерджи.">
+      <picture>
+        <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+        <img src="images/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи.">
+      </picture>
       <img src="images/icons/logotype-name.svg" width="101" height="18" alt="Кэт энерджи.">
     </a>
     <nav class="main-nav nav">
-      <button class="main-nav__toggle toggle" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
         <span class="toggle__line"></span>
         <span class="toggle__line"></span>
@@ -36,10 +44,17 @@
   </header>
   <main class="main-container">
     <section class="hero">
-      <h1 class="page__title">Функциональное питание для котов</h1>
+      <h1 class="hero__title">Функциональное питание для котов</h1>
       <p class="hero__slogan">Занялся собой? Займись котом!</p>
-      <img src="images/cats-food-chicken.png" width="280" height="270" alt="Кэт Энерджи со вкусом курицы.">
-      <a class="hero__button" href="form.html">подобрать программу</a>
+      <picture>
+        <source type="image/png" media="(min-width:1440px)"
+          srcset="images/hero-pic-desktop@1x.png 1x, images/hero-pic-desktop@2x.png 2x" width="552" height="499">
+        <source type="image/png" media="(min-width:768px)"
+          srcset="images/hero-pic-tablet@1x.png 1x, images/hero-pic-tablet@2x.png 2x" width="709" height="609">
+        <img src="images/hero-pic-mobile@1x.png" srcset="images/hero-pic-mobile@2x.png 2x" width="280" height="270"
+          alt="Кэт Энерджи со вкусом курицы.">
+      </picture>
+      <a class="hero__button button button--primary" href="form.html">подобрать программу</a>
     </section>
     <section class="programs">
       <div class="programs-container">
@@ -81,7 +96,9 @@
     <section class="example">
       <div class="example-container container">
         <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+          16 часов в день.</p>
         <div class="example-results">
           <dl class="example-results__details details">
             <div class="details__item">
@@ -98,18 +115,27 @@
           </div>
           <div class="example__slider slider">
             <div class="slider__before">
-              <img src="images/cat-before.png" alt="До" width="280" height="256">
+              <picture>
+                <source type="image/png" media="(min-width:768px)"
+                  srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560"
+                  height="512">
+                <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="До"
+                  width="280" height="256">
+              </picture>
             </div>
-            <div class="slider__toggle toggle">
-              <button class="toggle__left" type="button">
+            <div class="slider__toggle">
+              <button class="toggle" type="button">
                 <span class="visually-hidden">до</span>
-              </button>
-              <button class="toggle__right" type="button">
-                <span class="visually-hidden">после</span>
               </button>
             </div>
             <div class="slider__after">
-              <img src="images/cat-after.png " alt="После" width="280" height="256">
+              <picture>
+                <source type="image/png" media="(min-width:768px)"
+                  srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560"
+                  height="512">
+                <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="После"
+                  width="280" height="256">
+              </picture>
             </div>
           </div>
         </div>

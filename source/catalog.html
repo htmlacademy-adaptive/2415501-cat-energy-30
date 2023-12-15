@@ -6,17 +6,24 @@
   <title>Cat Energy</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml" sizes="32x32">
+  <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body class="page__body">
   <header class="main-header">
     <a href="/">
-      <img src="images/icons/logotype.svg" width="33" height="38" alt="Кэт энерджи.">
+      <picture>
+        <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+        <img src="images/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи.">
+      </picture>
       <img src="images/icons/logotype-name.svg" width="101" height="18" alt="Кэт энерджи.">
     </a>
     <nav class="main-nav nav">
-      <button class="main-nav__toggle toggle" type="button">
+      <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
         <span class="toggle__line"></span>
         <span class="toggle__line"></span>
@@ -42,7 +49,13 @@
       <ul class="catalog__cards">
         <li class="card">
           <a href="#">
-            <img src="images/cat-energy-chicken-500.png" width="68" height="86" alt="Курица 500гр">
+            <picture>
+              <source type="image/png" media="(min-width:768px)"
+                srcset="images/chicken-500-tablet@1x.png 1x, images/chicken-500-tablet@2x.png 2x" width="161"
+                height="172">
+              <img src="images/chicken-500-mobile@1x.png" srcset="images/chicken-500-mobile@2x.png 2x" width="68"
+                height="86" alt="Курица 500гр">
+            </picture>
             <h3 class="card__title">Cat Energy PRO 500 г</h3>
           </a>
           <table class="card__details">
@@ -63,7 +76,16 @@
         </li>
         <li class="card">
           <a href="#">
-            <img src="images/cat-energy-chicken-1000.png" width="84" height="100" alt="Курица 1000гр.">
+            <picture>
+              <source type="image/png" media="(min-width:1440px)"
+                srcset="images/chicken-1000-desktop@1x.png 1x, images/chicken-1000-desktop@2x.png 2x" width="172"
+                height="196">
+              <source type="image/png" media="(min-width:768px)"
+                srcset="images/chicken-1000-tablet@1x.png 1x, images/chicken-1000-tablet@2x.png 2x" width="168"
+                height="206">
+              <img src="images/chicken-1000-mobile@1x.png" srcset="images/chicken-1000-mobile@2x.png 2x" width="84"
+                height="100" alt="Курица 1000гр.">
+            </picture>
             <h3 class="card__title">Cat Energy PRO 1000 г</h3>
           </a>
           <table class="card__details">
@@ -84,7 +106,12 @@
         </li>
         <li class="card">
           <a href="#">
-            <img src="images/cat-energy-fish-1000.png" width="68" height="78" alt="Рыба 500гр.">
+            <picture>
+              <source type="image/png" media="(min-width:768px)"
+                srcset="images/fish-500-tablet@1x.png 1x, images/fish-500-tablet@2x.png 2x" width="163" height="174">
+              <img src="images/fish-500-mobile@1x.png" srcset="images/fish-500-mobile@2x.png 2x" width="68" height="78"
+                alt="Рыба 500гр.">
+            </picture>
             <h3 class="card__title">Cat Energy PRO 500 г</h3>
           </a>
           <table class="card__details">
@@ -105,7 +132,15 @@
         </li>
         <li class="card">
           <a href="#">
-            <img src="images/cat-energy-fish-1000.png" width="84" height="100" alt="Рыба 1000гр.">
+            <picture>
+              <source type="image/png" media="(min-width:1440px)"
+                srcset="images/fish-1000-desktop@1x.png 1x, images/fish-1000-desktop@2x.png 2x" width="172"
+                height="196">
+              <source type="image/png" media="(min-width:768px)"
+                srcset="images/fish-1000-tablet@1x.png 1x, images/fish-1000-tablet@2x.png 2x" width="168" height="200">
+              <img src="images/fish-1000-mobile@1x.png" srcset="images/fish-1000-mobile@2x.png 2x" width="84"
+                height="100" alt="Рыба 1000гр.">
+            </picture>
             <h3 class="card__title">Cat Energy PRO 1000 г</h3>
           </a>
           <table class="card__details">
@@ -126,7 +161,13 @@
         </li>
         <li class="card">
           <a href="#">
-            <img src="images/cat-energy-buckwheat-500.png" width="68" height="78" alt="Гречка 500гр.">
+            <picture>
+              <source type="image/png" media="(min-width:768px)"
+                srcset="images/buckwheat-500-tablet@1x.png 1x, images/buckwheat-500-tablet@2x.png 2x" width="161"
+                height="171">
+              <img src="images/buckwheat-500-mobile@1x.png" srcset="images/buckwheat-1000-mobile@2x.png 2x" width="68"
+                height="78" alt="Гречка 500гр.">
+            </picture>
             <h3 class="card__title">Cat Energy SLIM 500 г</h3>
           </a>
           <table class="card__details">
@@ -147,7 +188,16 @@
         </li>
         <li class="card">
           <a href="#">
-            <img src="images/cat-energy-buckwheat-1000.png" width="84" height="100" alt="Гречка 1000гр.">
+            <picture>
+              <source type="image/png" media="(min-width:1440px)"
+                srcset="images/buckwheat-1000-desktop@1x.png 1x, images/buckwheat-1000-desktop@2x.png 2x" width="172"
+                height="196">
+              <source type="image/png" media="(min-width:768px)"
+                srcset="images/buckwheat-1000-tablet@1x.png 1x, images/buckwheat-1000-tablet@2x.png 2x" width="168"
+                height="200">
+              <img src="images/buckwheat-1000-mobile@1x.png" srcset="images/buckwheat-1000-mobile@2x.png 2x" width="84"
+                height="100" alt="Гречка 1000гр.">
+            </picture>
             <h3 class="card__title">Cat Energy SLIM 1000 г</h3>
           </a>
           <table class="card__details">
@@ -168,7 +218,12 @@
         </li>
         <li class="card">
           <a href="#">
-            <img src="images/cat-energy-rice-500.png" width="72" height="84" alt="Рис 500гр.">
+            <picture>
+              <source type="image/png" media="(min-width:768px)"
+                srcset="images/rice-500-tablet@1x.png 1x, images/rice-500-tablet@2x.png 2x" width="163" height="174">
+              <img src="images/rice-500-mobile@1x.png" srcset="images/rice-500-mobile@2x.png 2x" width="72" height="84"
+                alt="Рис 500гр.">
+            </picture>
             <h3 class="card__title">Cat Energy SLIM 500 г</h3>
           </a>
           <table class="card__details">
@@ -193,44 +248,44 @@
           </button>
           <b class="card__more">Показать еще 100500 товаров</b>
           <p class="card__text">На самом деле вкусов гораздо больше!</p>
-          <button type="button">показать все</button>
+          <a class="card__button button button--secondary" href="#">показать все</button>
         </li>
       </ul>
     </div>
 
     <section class="main-container__extra-products extra-products">
-      <div class="extra-products">
+      <div class="extra-products__description">
         <h2 class="extra-products__title">Дополнительные товары</h2>
         <ul class="extra-products__list">
-          <li class="extra-products__item extra">
+          <li class="extra-products__item">
             <h3 class="extra__title">Сахарозаменитель</h3>
-            <div class="extra__details additionally">
-              <p class="additionally__weight">1 упаковка (100 г)</p>
-              <p class="additionally__price">200 ₽</p>
+            <div class="extra__details">
+              <p class="extra__weight">1 упаковка (100 г)</p>
+              <p class="extra__price">200 ₽</p>
             </div>
             <a class="extra__button button button--primary" href="form.html">заказать</a>
           </li>
-          <li class="extra-products__item extra">
+          <li class="extra-products__item">
             <h3 class="extra__title">питьевая вода</h3>
-            <div class="extra__details additionally">
-              <p class="additionally__weight">5 литров</p>
-              <p class="additionally__price">50 ₽</p>
+            <div class="extra__details">
+              <p class="extra__weight">5 литров</p>
+              <p class="extra__price">50 ₽</p>
             </div>
             <a class="extra__button button button--primary" href="form.html">заказать</a>
           </li>
-          <li class="extra-products__item extra">
+          <li class="extra-products__item">
             <h3 class="extra__title">молоко</h3>
-            <div class="extra__details additionally">
-              <p class="additionally__weight">1 литр</p>
-              <p class="additionally__price">100 ₽</p>
+            <div class="extra__details">
+              <p class="extra__weight">1 литр</p>
+              <p class="extra__price">100 ₽</p>
             </div>
             <a class="extra__button button button--primary" href="form.html">заказать</a>
           </li>
-          <li class="extra-products__item extra">
+          <li class="extra-products__item">
             <h3 class="extra__title">витамины</h3>
-            <div class="extra__details additionally">
-              <p class="additionally__weight">1 упаковка (30 г)</p>
-              <p class="additionally__price">300 ₽</p>
+            <div class="extra__details">
+              <p class="extra__weight">1 упаковка (30 г)</p>
+              <p class="extra__price">300 ₽</p>
             </div>
             <a class="extra__button button button--primary" href="form.html">заказать</a>
           </li>
@@ -247,7 +302,7 @@
         <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="contacts__map map">
-        <img src="images/map.jpg" alt="Наше местонахождение." width="320" height="362">
+        <iframe name="map" alt="Наше местонахождение." width="320" height="362"></iframe>
       </div>
     </section>
     <a class="page-footer__logo" href="/">
