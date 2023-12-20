@@ -1,7 +1,38 @@
 /* GLOBAL */
 @import "./global/variables.scss";
-@import "./global/global.scss";
+@import "./global/mixins.scss";
 @import "./global/fonts.scss";
+@import "./global/global.scss";
+@import "./global/visually-hidden.scss";
+
 
 /* BLOCKS */
+@import "./blocks/page.scss";
 @import "./blocks/header.scss";
+@import "./blocks/buttons.scss";
+@import "./blocks/page-footer.scss";
+
+@import "./blocks/address.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/advantages-item.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/card.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/control.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/details.scss";
+@import "./blocks/example.scss";
+@import "./blocks/example-results.scss";
+@import "./blocks/extra.scss";
+@import "./blocks/extra-description.scss";
+@import "./blocks/form.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/products.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/programs-item.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/social.scss";
+@import "./blocks/toggle-menu.scss";

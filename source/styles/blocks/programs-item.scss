@@ -1,0 +1,23 @@
+.programs-item{
+  background-color: #F2F2F2;
+}
+
+.programs-item__title{
+  font-family: $font-title;
+  color: $base-color-title;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.programs-item__link{
+  font-family: $font-title;
+  font-size: 16px;
+  line-height: 16px;
+  color: $base-color-title;
+
+  &:focus{
+    color: rgba(0, 0, 0, 0.3);
+  }
+
+}

@@ -23,21 +23,21 @@
       <img src="images/icons/logotype-name.svg" width="101" height="18" alt="Кэт энерджи.">
     </a>
     <nav class="main-nav nav">
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle toggle-menu" type="button">
         <span class="visually-hidden">Открыть меню</span>
-        <span class="toggle__line"></span>
-        <span class="toggle__line"></span>
-        <span class="toggle__line"></span>
+        <span class="toggle-menu__line"></span>
+        <span class="toggle-menu__line"></span>
+        <span class="toggle-menu__line"></span>
       </button>
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a href="/">главная</a>
+          <a class="site-list__link" href="/">главная</a>
         </li>
         <li class="site-list__item">
-          <a href="catalog.html">каталог продукциия</a>
+          <a class="site-list__link" href="catalog.html">каталог продукции</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">подбор программы</a>
+          <a class="site-list__link" href="form.html">подбор программы</a>
         </li>
       </ul>
     </nav>
@@ -57,23 +57,21 @@
       <a class="hero__button button button--primary" href="form.html">подобрать программу</a>
     </section>
     <section class="programs">
-      <div class="programs-container">
-        <h2 class="visually-hidden">Программы питания</h2>
-        <ul class="programs-container__list">
-          <li class="programs-container__item programs-item">
-            <h3 class="programs-item__title">похудение</h3>
-            <p class="programs-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по
-              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="programs-item__link" href="catalog.html">каталог slim</a>
-          </li>
-          <li class="programs-container__item programs-item">
-            <h3 class="programs-item__title">Набор массы</h3>
-            <p class="programs-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
-              Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-            <a class="programs-item__link" href="catalog.html">каталог pro</a>
-          </li>
-        </ul>
-      </div>
+      <h2 class="visually-hidden">Программы питания</h2>
+      <ul class="programs__list">
+        <li class="programs__item programs-item">
+          <h3 class="programs-item__title">похудение</h3>
+          <p class="programs-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="programs-item__link" href="catalog.html">каталог slim</a>
+        </li>
+        <li class="programs-container__item programs-item">
+          <h3 class="programs-item__title">Набор массы</h3>
+          <p class="programs-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+            Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <a class="programs-item__link" href="catalog.html">каталог pro</a>
+        </li>
+      </ul>
     </section>
     <section class="advantages">
       <h2 class="advantages__title">Как это работает</h2>
@@ -94,49 +92,46 @@
     </section>
 
     <section class="example">
-      <div class="example-container container">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
-          16 часов в день.</p>
-        <div class="example-results">
-          <dl class="example-results__details details">
-            <div class="details__item">
-              <dt class="details__value">5 КГ</dt>
-              <dd class="details__description">снижение веса</dd>
-            </div>
-            <div class="example-results__details details">
-              <dt class="details__value">60 ДНЕЙ</dt>
-              <dd class="details__description">затрачено времени</dd>
-            </div>
-          </dl>
-          <div class="example__cost">
-            <span class="example__total">Затраты на питание: 15 000 РУБ.</span>
+      <h2 class="example__title">Живой пример</h2>
+      <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по
+        16 часов в день.</p>
+      <div class="example-results">
+        <dl class="example-results__details details">
+          <div class="details__item">
+            <dt class="details__value">5 КГ</dt>
+            <dd class="details__description">снижение веса</dd>
           </div>
-          <div class="example__slider slider">
-            <div class="slider__before">
-              <picture>
-                <source type="image/png" media="(min-width:768px)"
-                  srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560"
-                  height="512">
-                <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="До"
-                  width="280" height="256">
-              </picture>
-            </div>
-            <div class="slider__toggle">
-              <button class="toggle" type="button">
-                <span class="visually-hidden">до</span>
-              </button>
-            </div>
-            <div class="slider__after">
-              <picture>
-                <source type="image/png" media="(min-width:768px)"
-                  srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560"
-                  height="512">
-                <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="После"
-                  width="280" height="256">
-              </picture>
-            </div>
+          <div class="example-results__details details">
+            <dt class="details__value">60 ДНЕЙ</dt>
+            <dd class="details__description">затрачено времени</dd>
+          </div>
+        </dl>
+        <div class="example__cost">
+          <span class="example__total">Затраты на питание: 15 000 РУБ.</span>
+        </div>
+        <div class="example__slider slider">
+          <div class="slider__before">
+            <picture>
+              <source type="image/png" media="(min-width:768px)"
+                srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x" width="560"
+                height="512">
+              <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="До"
+                width="280" height="256">
+            </picture>
+          </div>
+          <div class="slider__toggle">
+            <button class="toggle" type="button">
+              <span class="visually-hidden">до</span>
+            </button>
+          </div>
+          <div class="slider__after">
+            <picture>
+              <source type="image/png" media="(min-width:768px)"
+                srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x" width="560" height="512">
+              <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="После"
+                width="280" height="256">
+            </picture>
           </div>
         </div>
       </div>
@@ -145,12 +140,12 @@
   <footer class="page-footer">
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__address address">
+      <div class="contacts__address address address--primary">
         <b class="address__title">приглашаем к сотрудничеству дилеров!</b>
         <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
-      <div class="contacts__map map">
-        <img src="images/map.jpg" alt="Наше местонахождение." width="320" height="362">
+      <div class="contacts__map">
+        <iframe name="map" alt="Наше местонахождение." width="320" height="362"></iframe>
       </div>
     </section>
     <a class="page-footer__logo" href="/">
