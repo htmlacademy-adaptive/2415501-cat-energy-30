@@ -1,0 +1,24 @@
+.programs-item {
+  background-color: #f2f2f2;
+}
+
+.programs-item__title {
+  font-family: $font-title;
+  font-weight: 400;
+  color: $base-color-title;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.programs-item__link {
+  font-family: $font-title;
+  font-size: 16px;
+  line-height: 16px;
+  color: $base-color-title;
+  text-transform: uppercase;
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}

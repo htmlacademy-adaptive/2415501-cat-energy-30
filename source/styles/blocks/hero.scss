@@ -1,0 +1,18 @@
+.hero {
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.hero__title {
+  font-family: $font-title;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $special-color-text;
+}
+
+.hero__slogan {
+  font-family: $font-title;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $special-color-text;
+}

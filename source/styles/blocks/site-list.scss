@@ -1,0 +1,23 @@
+.site-list {
+  list-style: none;
+}
+
+.site-list__link {
+  font-family: $font-title;
+  color: $base-color-title;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 20px;
+
+  &:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.site-list__item--active {
+  border-bottom: 2px solid $base-color-button;
+}
