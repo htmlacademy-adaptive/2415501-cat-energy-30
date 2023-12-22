@@ -2,20 +2,21 @@
   list-style: none;
 }
 
-.card__title{
+.card__title {
   font-family: $font-title;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: $catalog-color-title;
   text-transform: uppercase;
 }
 
-.card__details{
+.card__details {
   font-size: 12px;
   line-height: 16px;
 }
 
-.card__more{
+.card__more {
   font-family: $font-title;
   font-size: 16px;
   line-height: 20px;
@@ -23,7 +24,7 @@
   text-transform: uppercase;
 }
 
-.card__text{
+.card__text {
   font-size: 12px;
   line-height: 16px;
 }

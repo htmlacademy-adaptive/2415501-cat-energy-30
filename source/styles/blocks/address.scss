@@ -1,16 +1,17 @@
-.address--primary{
+.address--primary {
   background-color: #ffffff;
 }
 
-.address__title{
+.address__title {
   font-family: $font-title;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: $base-color-title;
+  color: #111111;
   text-transform: uppercase;
 }
 
-.address__text{
+.address__text {
   line-height: 20px;
   font-style: normal;
 }

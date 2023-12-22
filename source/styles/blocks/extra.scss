@@ -1,22 +1,24 @@
-.extra__title{
+.extra__title {
   font-family: $font-title;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   color: $base-color-title;
 }
 
-.extra__list{
+.extra__list {
   list-style: none;
 }
 
-.extra__second-title{
+.extra__second-title {
   font-family: $font-title;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   color: $catalog-color-title;
   text-transform: uppercase;
 }
 
-.extra__details{
+.extra__details {
   line-height: 14px;
 }
