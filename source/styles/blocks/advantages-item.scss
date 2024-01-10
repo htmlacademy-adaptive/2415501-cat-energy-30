@@ -1,3 +1,53 @@
-/* .advantages{
+.advantages-item {
+  margin-bottom: 20px;
+  margin-left: 80px;
+}
 
-}*/
+.advantages-item__text {
+  width: 200px;
+}
+
+.advantages-item__text--leaf::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("../../images/icons/stack.svg#leaf");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  left: 20px;
+}
+
+.advantages-item__text--powder::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("../../images/icons/stack.svg#powder");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  left: 20px;
+}
+
+.advantages-item__text--instruments::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("../../images/icons/stack.svg#instruments");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  left: 20px;
+}
+
+.advantages-item__text--scales::before {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("../../images/icons/stack.svg#scales");
+  background-repeat: no-repeat;
+  width: 60px;
+  height: 60px;
+  left: 20px;
+}
+

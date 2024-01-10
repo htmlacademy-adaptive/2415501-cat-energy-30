@@ -5,6 +5,7 @@
   text-transform: uppercase;
   color: $base-color-text;
   border: 1px solid #e7e7e7;
+  padding: 14px 49px 13px 15px;
 }
 
 .control__text {
@@ -13,4 +14,20 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $base-color-text;
+}
+
+.control__input--email {
+  width: 217px;
+  background-image: url("../../images/icons/stack.svg#email");
+  background-position: center right 12px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+}
+
+.control__input--tel {
+  width: 200px;
+  background-image: url("../../images/icons/stack.svg#phone");
+  background-position: center right 13px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
