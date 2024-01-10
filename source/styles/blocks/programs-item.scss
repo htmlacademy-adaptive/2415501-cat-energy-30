@@ -59,8 +59,8 @@
   height: 12px;
   left: 102px;
   top: 10px;
+}
 
-  &:active {
-    opacity: 0.3;
-  }
+.programs-item__link:active:after {
+  opacity: 0.3;
 }
