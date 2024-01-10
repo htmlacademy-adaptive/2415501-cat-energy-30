@@ -61,6 +61,6 @@
   top: 10px;
 }
 
-.programs-item__link:active:after {
+.programs-item__link:active::after {
   opacity: 0.3;
 }

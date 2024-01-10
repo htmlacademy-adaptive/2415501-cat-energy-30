@@ -48,10 +48,10 @@
   right: 39px;
 }
 
-.control__text--email:active:after {
+.control__text--email:active::after {
   background-color: #68b738;
 }
 
-.control__text--tel:active:after {
+.control__text--tel:active::after {
   background-color: #68b738;
 }
