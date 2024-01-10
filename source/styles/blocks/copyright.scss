@@ -2,4 +2,27 @@
   color: $base-color-text;
   font-size: 16px;
   line-height: 20px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.copyright__text {
+  display: flex;
+}
+
+.copyright__text::after {
+  content: "";
+  mask-image: url("../../images/icons/stack.svg#logo-html-academy");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 27px 34px;
+  background-color: #666666;
+  width: 27px;
+  height: 34px;
+}
+
+.copyright__text:hover::after {
+  background-color: #68b738;
 }
