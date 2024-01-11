@@ -14,7 +14,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a href="/">
+    <a class="main-header__link" href="/">
       <picture>
         <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
         <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
@@ -53,15 +53,13 @@
           <ul class="form__list">
             <li class="form__control control">
               <label class="control__label">
-                <input class="control__input" type="text" id="cat-name" name="cat-name" placeholder="барсик"
-                  required>
+                <input class="control__input" type="text" id="cat-name" name="cat-name" placeholder="барсик" required>
                 <span class="control__text">ИМЯ:*</span>
               </label>
             </li>
             <li class="form__control control">
               <label class="control__label">
-                <input class="control__input" type="number" id="cat-weight" name="cat-weight" placeholder="7"
-                  required>
+                <input class="control__input" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
                 <span class="control__text">Вес (кг):*</span>
               </label>
             </li>
@@ -70,7 +68,7 @@
               <input class="control__input" type="number" id="cat-age" name="cat-age" placeholder="7">
               <span class="control__text">Возраст (лет):</span>
             </li>
-            </ul>
+          </ul>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Тип программы</legend>
@@ -103,23 +101,27 @@
           <ul class="form__list">
             <li class="form__control control">
               <label class="control__label">
-                <input class="control__input" type="email" id="email" name="email"
-                  placeholder="kuklachev@gmail.coml" required>
-                <span class="control__text">E-mail:*</span>
+                <span class="control__text control__text--email">
+                  E-mail:*
+                  <input class="control__input control__input--email" type="email" id="email" name="email"
+                    placeholder="kuklachev@gmail.coml" required>
+                </span>
               </label>
             </li>
             <li class="form__control control">
               <label class="control__label">
-                <input class="control__input" type="tel" id="telephone" name="telephone"
-                  placeholder="8 (960) 900-60-90" required>
-                <span class="control__text">Телефон:*</span>
+                <span class="control__text control__text--tel">
+                  Телефон:*
+                  <input class="control__input control__input--tel" type="tel" id="telephone" name="telephone"
+                    placeholder="8 (960) 900-60-90" required>
+                </span>
               </label>
             </li>
           </ul>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Комментарий</legend>
-          <textarea class="form__control--textarea" name="text"
+          <textarea class="form__control form__control--textarea" name="text"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__fieldset">
@@ -178,26 +180,20 @@
     <div class="social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Вконтакте"></a>
         </li>
         <li class="social__item">
-          <a href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Youtube</span>
-          </a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+            aria-label="Youtube"></a>
         </li>
         <li class="social__item">
-          <a href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Telegram</span>
-          </a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Telegram"></a>
         </li>
       </ul>
     </div>
     <div class="page-footer__copyright">
       <a class="copyright" href="https://htmlacademy.ru/study">
         <span class="copyright__text">HTML Academy</span>
-        <img src="images/icons/logo-html-academy.svg" alt="Логотип HTML Академии." width="27" height="34">
       </a>
     </div>
   </footer>

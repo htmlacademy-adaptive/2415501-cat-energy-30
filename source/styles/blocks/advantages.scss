@@ -1,3 +1,7 @@
+.advantages {
+  padding: 20px;
+}
+
 .advantages__title {
   font-family: $font-title;
   font-weight: 400;
@@ -8,4 +12,5 @@
 
 .advantages__list {
   list-style: none;
+  padding: 0;
 }

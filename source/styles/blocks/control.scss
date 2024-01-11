@@ -5,6 +5,7 @@
   text-transform: uppercase;
   color: $base-color-text;
   border: 1px solid #e7e7e7;
+  padding: 14px 49px 13px 15px;
 }
 
 .control__text {
@@ -13,4 +14,42 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $base-color-text;
+  align-content: center;
+  align-items: center;
+}
+
+.control__text--tel::after {
+  content: "";
+  display: inline-flex;
+  position: relative;
+  mask-image: url("../../images/icons/stack.svg#phone");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 20px 20px;
+  background-color: #222222;
+  width: 20px;
+  height: 20px;
+  right: 39px;
+}
+
+.control__text--email::after {
+  content: "";
+  display: inline-flex;
+  position: relative;
+  mask-image: url("../../images/icons/stack.svg#email");
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: 20px 20px;
+  background-color: #222222;
+  width: 20px;
+  height: 20px;
+  right: 39px;
+}
+
+.control__text--email:active::after {
+  background-color: #68b738;
+}
+
+.control__text--tel:active::after {
+  background-color: #68b738;
 }

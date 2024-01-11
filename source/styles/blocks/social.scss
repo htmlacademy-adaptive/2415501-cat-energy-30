@@ -1,3 +1,33 @@
-.social__list {
+.social__item {
   list-style: none;
+}
+
+.social__link {
+  display: block;
+  width: 28px;
+  height: 22px;
+  mask-size: 28px 22px;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  background-color: #666666;
+
+  &:hover {
+    background-color: #68b738;
+  }
+
+  &:active {
+    background-color: rgba(104, 183, 56, 0.3);
+  }
+}
+
+.social__link--vk {
+  mask-image: url("../../images/icons/stack.svg#vk");
+}
+
+.social__link--youtube {
+  mask-image: url("../../images/icons/stack.svg#youtube");
+}
+
+.social__link--telegram {
+  mask-image: url("../../images/icons/stack.svg#telegram");
 }

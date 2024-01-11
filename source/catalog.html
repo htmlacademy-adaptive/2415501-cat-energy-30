@@ -14,7 +14,7 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a href="/">
+    <a class="main-header__link" href="/">
       <picture>
         <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
         <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
@@ -304,7 +304,7 @@
         <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
       </div>
       <div class="contacts__map">
-        <iframe name="map"  width="320" height="362"></iframe>
+        <iframe name="map" width="320" height="362"></iframe>
       </div>
     </section>
     <a class="page-footer__logo" href="/">
@@ -313,26 +313,20 @@
     <div class="social">
       <ul class="social__list">
         <li class="social__item">
-          <a href="https://vk.com/htmlacademy">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
+          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Вконтакте"></a>
         </li>
         <li class="social__item">
-          <a href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">Youtube</span>
-          </a>
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+            aria-label="Youtube"></a>
         </li>
         <li class="social__item">
-          <a href="https://t.me/htmlacademy">
-            <span class="visually-hidden">Telegram</span>
-          </a>
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Telegram"></a>
         </li>
       </ul>
     </div>
     <div class="page-footer__copyright">
       <a class="copyright" href="https://htmlacademy.ru/study">
         <span class="copyright__text">HTML Academy</span>
-        <img src="images/icons/logo-html-academy.svg" alt="Логотип HTML Академии." width="27" height="34">
       </a>
     </div>
   </footer>
