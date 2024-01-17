@@ -2,13 +2,16 @@
   display: flex;
   justify-content: space-between;
   height: 38px;
+  padding: 0 20px;
 
   @media (min-width: $tablet-widht) {
     height: 50px;
+    padding: 0 30px;
   }
 
   @media (min-width: $desktop-width) {
     height: 59px;
+    padding: 0 110px;
   }
 }
 
