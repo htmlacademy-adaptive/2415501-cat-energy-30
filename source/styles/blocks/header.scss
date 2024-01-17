@@ -1,3 +1,17 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  height: 38px;
+
+  @media (min-width: $tablet-widht) {
+    height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 59px;
+  }
+}
+
 .main-header__link {
   &:hover {
     opacity: 0.8;

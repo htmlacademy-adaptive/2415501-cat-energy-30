@@ -1,4 +1,9 @@
-/*
-.main-nav {
+.main-nav__toggle {
+  @media (min-width: $tablet-widht) {
+    display: none;
+  }
 
-}*/
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}

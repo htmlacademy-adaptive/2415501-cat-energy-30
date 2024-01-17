@@ -44,11 +44,14 @@
   </header>
   <main class="main-container">
     <div class="main-container__form">
+      <div class="container">
       <h1 class="page__title">Подбор программы</h1>
       <p class="page__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+      </div>
       <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
 
         <fieldset class="form__fieldset">
+          <div class="container">
           <legend class="visually-hidden">Данные о коте</legend>
           <ul class="form__list">
             <li class="form__control control">
@@ -69,8 +72,10 @@
               <span class="control__text">Возраст (лет):</span>
             </li>
           </ul>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
+          <div class="container">
           <legend class="visually-hidden">Тип программы</legend>
           <ul class="form__list">
             <li class="form__control control">
@@ -95,8 +100,10 @@
               </label>
             </li>
           </ul>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
+          <div class="container">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
           <ul class="form__list">
             <li class="form__control control">
@@ -118,13 +125,17 @@
               </label>
             </li>
           </ul>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
+          <div class="container">
           <legend class="form__legend">Комментарий</legend>
           <textarea class="form__control form__control--textarea" name="text"
             placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
         </fieldset>
         <fieldset class="form__fieldset">
+          <div class="container">
           <legend class="form__legend">Дополнительно</legend>
           <ul class="form__list">
             <li class="form__control control">
@@ -156,45 +167,52 @@
               </label>
             </li>
           </ul>
+          </div>
         </fieldset>
+        <div class="container">
         <button class="form__button button button--primary" type="submit">отправить заявку</button>
         <p class="form__text">* — Обязательные поля</p>
+        </div>
       </form>
 
     </div>
   </main>
   <footer class="page-footer">
     <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <div class="contacts__address address">
-        <b class="address__title">приглашаем к сотрудничеству дилеров!</b>
-        <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <div class="container">
+        <h2 class="visually-hidden">Контакты</h2>
+        <div class="contacts__address address">
+          <b class="address__title">приглашаем к сотрудничеству дилеров!</b>
+          <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+        </div>
       </div>
       <div class="contacts__map map">
         <iframe name="map" width="320" height="362"></iframe>
       </div>
     </section>
-    <a class="page-footer__logo" href="/">
-      <img src="images/icons/logotype-name.svg" width="101" height="18" alt="Кэт энерджи.">
-    </a>
-    <div class="social">
-      <ul class="social__list">
-        <li class="social__item">
-          <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Вконтакте"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
-            aria-label="Youtube"></a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Telegram"></a>
-        </li>
-      </ul>
-    </div>
-    <div class="page-footer__copyright">
-      <a class="copyright" href="https://htmlacademy.ru/study">
-        <span class="copyright__text">HTML Academy</span>
+    <div class="container">
+      <a class="page-footer__logo" href="/">
+        <img src="images/icons/logotype-name.svg" width="101" height="18" alt="Кэт энерджи.">
       </a>
+      <div class="social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--vk" href="https://vk.com/htmlacademy" aria-label="Вконтакте"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru"
+              aria-label="Youtube"></a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy" aria-label="Telegram"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <a class="copyright" href="https://htmlacademy.ru/study">
+          <span class="copyright__text">HTML Academy</span>
+        </a>
+      </div>
     </div>
   </footer>
 </body>
