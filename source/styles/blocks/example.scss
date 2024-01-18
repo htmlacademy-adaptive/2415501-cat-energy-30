@@ -1,5 +1,6 @@
 .example {
   background-color: #eaeaea;
+  min-height: 574px;
 }
 
 .example__title {
@@ -8,6 +9,16 @@
   font-size: 36px;
   line-height: 40px;
   color: $base-color-title;
+  margin: 0;
+  padding-top: 25px;
+  margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $tablet-size;
+    line-height: $tablet-line-height;
+    padding-top: 45px;
+    margin-bottom: 60px;
+  }
 }
 
 .example__total {

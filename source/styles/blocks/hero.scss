@@ -1,5 +1,9 @@
 .hero {
   background-color: rgba(104, 183, 56, 0.85);
+  min-height: 480px;
+  @media (min-width: $tablet-width) {
+    background-color: #ffffff;
+  }
 }
 
 .hero__title {
@@ -8,6 +12,12 @@
   font-size: 36px;
   line-height: 36px;
   color: $special-color-text;
+
+  @media (min-width: $tablet-width) {
+    color: $base-color-title;
+    font-size: $tablet-size;
+    line-height: $tablet-line-height;
+  }
 }
 
 .hero__slogan {
@@ -15,4 +25,10 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $special-color-text;
+
+  @media (min-width: $tablet-width) {
+    color: $base-color-title;
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

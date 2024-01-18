@@ -4,6 +4,20 @@
   font-size: 36px;
   line-height: 36px;
   color: $base-color-title;
+  margin: 0;
+  padding-top: 27px;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $tablet-size;
+    line-height: $tablet-line-height;
+    padding-top: 65px;
+    margin-bottom: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 74px;
+  }
 }
 
 .page__description {

@@ -1,5 +1,5 @@
 .advantages {
-  padding: 20px;
+  min-height: 372px;
 }
 
 .advantages__title {
@@ -8,6 +8,14 @@
   font-size: 36px;
   line-height: 40px;
   color: $base-color-title;
+  margin: 0;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    font-size: $tablet-size;
+    line-height: $tablet-line-height;
+    margin-bottom: 32px;
+  }
 }
 
 .advantages__list {
