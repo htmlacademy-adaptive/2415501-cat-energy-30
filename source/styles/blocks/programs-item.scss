@@ -1,5 +1,13 @@
 .programs-item {
   background-color: #f2f2f2;
+  padding: 30px 33px 18px 20px;
+  position: relative;
+  margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 63px 53px 52px;
+    margin-bottom: 30px;
+  }
 }
 
 .programs-item__title {
@@ -9,10 +17,32 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin: 0;
   margin-left: 70px;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-left: 0;
+    margin-bottom: 24px;
+  }
 }
 
-.programs-item__title--slim::before {
+.programs-item__description {
+  padding-bottom: 23px;
+  border-bottom: 1px solid $border-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 48px;
+    border: none;
+    width: 340px;
+  }
+}
+
+.programs-item--slim::before {
   display: block;
   content: "";
   position: absolute;
@@ -20,10 +50,18 @@
   background-repeat: no-repeat;
   width: 50px;
   height: 53px;
-  left: 20px;
+  left: 21px;
+  top: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 200px;
+    height: 211px;
+    left: 63%;
+    top: 22%;
+  }
 }
 
-.programs-item__title--pro::before {
+.programs-item--pro::before {
   display: block;
   content: "";
   position: absolute;
@@ -31,7 +69,15 @@
   background-repeat: no-repeat;
   width: 67px;
   height: 50px;
-  left: 11px;
+  left: 13px;
+  top: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 200px;
+    left: 60%;
+    top: 24%;
+  }
 }
 
 .programs-item__link {
@@ -42,9 +88,13 @@
   text-transform: uppercase;
   padding: 4px 47px 4px 0;
   position: relative;
-
+  margin-top: 15px;
   &:active {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
   }
 }
 
@@ -58,7 +108,11 @@
   width: 24px;
   height: 12px;
   left: 102px;
-  top: 10px;
+  top: 35%;
+
+  @media (min-width: $tablet-width) {
+    left: 133px;
+  }
 }
 
 .programs-item__link:active::after {

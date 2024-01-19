@@ -2,6 +2,16 @@
   background-color: #ffffff;
 }
 
+.address__container {
+  display: flex;
+  justify-content: space-between;
+  padding: 26px 0;
+
+  @media (min-width:$tablet-width) {
+    padding: 70px 60px;
+  }
+}
+
 .address__title {
   font-family: $font-title;
   font-weight: 400;
@@ -9,9 +19,15 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+
+  @media (min-width:$tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+  }
 }
 
 .address__text {
   line-height: 20px;
   font-style: normal;
+  text-align: end;
 }

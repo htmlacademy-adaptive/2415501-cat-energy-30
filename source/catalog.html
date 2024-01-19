@@ -14,33 +14,40 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="main-header__link" href="/">
-      <picture>
-        <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
-        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
-        <img src="images/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи.">
-      </picture>
-      <img src="images/icons/logotype-name.svg" width="101" height="18" alt="Кэт энерджи.">
-    </a>
-    <nav class="main-nav nav">
-      <button class="main-nav__toggle toggle-menu" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-        <span class="toggle-menu__line"></span>
-        <span class="toggle-menu__line"></span>
-        <span class="toggle-menu__line"></span>
-      </button>
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item ">
-          <a class="site-list__link" href="index.html">главная</a>
-        </li>
-        <li class="site-list__item site-list__item--active">
-          <a class="site-list__link" href="#">каталог продукции</a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="form.html">подбор программы</a>
-        </li>
-      </ul>
-    </nav>
+    <div class="main-header__container container">
+      <div class="main-header__picture">
+        <a class="main-header__link" href="/">
+          <picture>
+            <source type="image/svg+xml" media="(min-width:1440px)" srcset="images/logo-desktop.svg" width="70"
+              height="59">
+            <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60"
+              height="50">
+            <img src="images/logo-mobile.svg" width="33" height="38" alt="Кэт энерджи.">
+          </picture>
+        </a>
+        <a class="main-header__logo" href="/">
+          <img src="images/icons/logotype-name.svg" width="101" height="18" alt="Кэт энерджи.">
+        </a>
+      </div>
+      <nav class="main-nav main-nav--closed nav">
+        <button class="main-nav__toggle toggle-menu" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__container">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="index.html">главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link site-list__link--active" href="#">каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link" href="form.html">подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </header>
   <main class="main-container">
     <section class="products">
@@ -304,18 +311,22 @@
   </main>
   <footer class="page-footer">
     <section class="contacts">
-      <div class="container">
-        <h2 class="visually-hidden">Контакты</h2>
-        <div class="contacts__address address">
-          <b class="address__title">приглашаем к сотрудничеству дилеров!</b>
-          <address class="address__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+      <h2 class="visually-hidden">Контакты</h2>
+      <div class="contacts__address address address--primary">
+        <div class="address__container container">
+          <b class="address__title">приглашаем<br> к сотрудничеству<br> дилеров!</b>
+          <address class="address__text">ул. Большая<br>Конюшенная, д. 19/8<br>Санкт-Петербург</address>
         </div>
       </div>
       <div class="contacts__map">
-        <iframe name="map" width="320" height="362"></iframe>
+        <iframe name="map" width="100%" height="362"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037876728562!2d30.32047247729881!3d59.93871647491518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1705605960416!5m2!1sru!2sru"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
     </section>
-    <div class="container">
+    <div class="page-footer__container container">
       <a class="page-footer__logo" href="/">
         <img src="images/icons/logotype-name.svg" width="101" height="18" alt="Кэт энерджи.">
       </a>
@@ -338,7 +349,7 @@
           <span class="copyright__text">HTML Academy</span>
         </a>
       </div>
-    </div>
+      </div>
   </footer>
 </body>
 

@@ -2,3 +2,10 @@
   list-style-type: none;
   padding: 0;
 }
+
+.programs__container {
+
+  @media (max-width: $mobile-width-only) {
+    min-width: 280px;
+  }
+}
