@@ -11,3 +11,9 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+
+const slider = document.querySelector('.slider');
+document.querySelector('.slider__range').addEventListener('input', (event) => {
+  slider.style.setProperty('--slide-width', `${event.target.value}%`);
+});

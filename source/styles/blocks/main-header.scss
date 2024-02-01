@@ -4,11 +4,11 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 13px;
-  padding-bottom: 14px;
+  padding-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
-    padding-bottom: 65px;
+    padding-bottom: 63px;
   }
 
   @media (min-width: $desktop-width) {
@@ -30,14 +30,18 @@
 
 .main-header__logo {
   @media (max-width:$mobile-width-only){
-    margin: 0 auto;
+    margin-left: 56px;
   }
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-left: 13px;
+  }
+
 }
 
 .main-header__picture {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
 
   @media (max-width:$mobile-width-only){

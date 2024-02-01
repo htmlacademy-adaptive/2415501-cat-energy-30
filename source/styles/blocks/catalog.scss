@@ -1,4 +1,12 @@
-/*
-.catalog{
-
-}*/
+.catalog__cards{
+  @media (min-width:$tablet-width) {
+    display: grid;
+    grid-template-columns: 324px 324px;
+    gap: 60px;
+  }
+  @media (min-width:$desktop-width) {
+    grid-template-columns: 245px 245px 245px 245px;
+    justify-content: space-between;
+    column-gap: 63px;
+  }
+}

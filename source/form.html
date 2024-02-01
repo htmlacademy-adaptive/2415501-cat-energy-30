@@ -9,6 +9,8 @@
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml" sizes="32x32">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/oswald/Oswald-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/lato/Lato-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   <script src="scripts/index.js" defer></script>
 </head>
 
@@ -51,14 +53,15 @@
   </header>
   <main class="main-container">
     <div class="main-container__form">
-      <div class="container-form">
+      <div class="container">
         <h1 class="page__title">Подбор программы</h1>
-        <p class="page__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="page__description">Заполните анкету, и мы подберем<br>программу питания для вашего кота</p>
       </div>
       <form class="form" action="https://echo.htmlacademy.ru/courses" method="post">
 
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Данные о коте</legend>
+          <div class="form__container container">
           <ul class="form__list">
             <li class="form__control control">
               <label class="control__label">
@@ -69,44 +72,49 @@
             <li class="form__control control">
               <label class="control__label">
                 <input class="control__input" type="number" id="cat-weight" name="cat-weight" placeholder="7" required>
-                <span class="control__text">Вес (кг):*</span>
+                <span class="control__text">Вес&nbsp;(кг):*</span>
               </label>
             </li>
             <li class="form__control control">
-              <label class="control__label" for="cat-age"></label>
-              <input class="control__input" type="number" id="cat-age" name="cat-age" placeholder="7">
-              <span class="control__text">Возраст (лет):</span>
+              <label class="control__label" for="cat-age">
+                <input class="control__input" type="number" id="cat-age" name="cat-age" placeholder="7">
+                <span class="control__text">Возраст (лет):</span>
+              </label>
             </li>
           </ul>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="visually-hidden">Тип программы</legend>
+          <div class="form__container container">
           <ul class="form__list">
             <li class="form__control control">
-              <label class="control__label">
+              <label class="control__label control__label--secondary">
                 <input class="control__input control__radio" type="radio" name="program" value="slim" checked>
                 <span class="control__mark"></span>
                 <span class="control__text">похудение</span>
               </label>
             </li>
             <li class="form__control control">
-              <label class="control__label">
+              <label class="control__label control__label--secondary">
                 <input class="control__input control__radio" type="radio" name="program" value="pro">
                 <span class="control__mark"></span>
                 <span class="control__text">Набор массы</span>
               </label>
             </li>
             <li class="form__control control">
-              <label class="control__label">
+              <label class="control__label control__label--secondary">
                 <input class="control__input control__radio" type="radio" name="program" value="advice">
                 <span class="control__mark"></span>
                 <span class="control__text">Не знаю (Нужен ваш совет)</span>
               </label>
             </li>
           </ul>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Контактные данные (владельца кота)</legend>
+          <div class="container">
           <ul class="form__list">
             <li class="form__control control">
               <label class="control__label">
@@ -127,47 +135,54 @@
               </label>
             </li>
           </ul>
+          </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Комментарий</legend>
-          <textarea class="form__control form__control--textarea" name="text"
+          <div class="container">
+          <textarea class="form__control control__input--textarea" name="text"
             placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
         </fieldset>
         <fieldset class="form__fieldset">
           <legend class="form__legend">Дополнительно</legend>
+          <div class="container">
           <ul class="form__list">
-            <li class="form__control control">
-              <label class="control__label">
+            <li class="form__control form__control--extra control">
+              <label class="control__label control__label--secondary">
                 <input class="control__input control__checkbox" type="checkbox" name="sweetener" checked>
                 <span class="control__mark"></span>
                 <span class="control__text">сахарозаменитель</span>
               </label>
             </li>
             <li class="form__control control">
-              <label class="control__label">
+              <label class="control__label control__label--secondary">
                 <input class="control__input control__checkbox" type="checkbox" name="water">
                 <span class="control__mark"></span>
                 <span class="control__text">питьевая вода</span>
               </label>
             </li>
             <li class="form__control control">
-              <label class="control__label">
+              <label class="control__label control__label--secondary">
                 <input class="control__input control__checkbox" type="checkbox" name="milk">
                 <span class="control__mark"></span>
                 <span class="control__text">молоко</span>
               </label>
             </li>
             <li class="form__control control">
-              <label class="control__label">
+              <label class="control__label control__label--secondary">
                 <input class="control__input control__checkbox" type="checkbox" name="vitamine">
                 <span class="control__mark"></span>
                 <span class="control__text">витамины</span>
               </label>
             </li>
           </ul>
+          </div>
         </fieldset>
+        <div class="container form__button--container">
           <button class="form__button button button--primary" type="submit">отправить заявку</button>
           <p class="form__text">* — Обязательные поля</p>
+          </div>
       </form>
 
     </div>
