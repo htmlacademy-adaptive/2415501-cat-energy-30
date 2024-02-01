@@ -1,3 +1,34 @@
+.page__body {
+  @media (min-width:$desktop-width) {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      right: -27%;
+      width: 78%;
+      height: 20%;
+    }
+
+    &::before {
+      z-index: -1;
+      background-color: rgba($base-color-button, 0.85);
+    }
+
+    &::after {
+      z-index: -2;
+      display: block;
+      background-image: url("../../images/cat-bg-hero@1x.webp");
+      background-position: 100%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
 .page__title {
   font-family: $font-title;
   font-weight: 400;

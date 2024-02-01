@@ -1,8 +1,46 @@
-.hero {
-  background-color: rgba(104, 183, 56, 0.85);
-  min-height: 480px;
+@media (max-width:$mobile-width-only) {
+  .hero {
+    position: relative;
+    margin-bottom: 20px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 94%;
+    }
+
+    &::before {
+      z-index: -1;
+      background: linear-gradient(180deg, rgba($base-color-button, 0.85) 303px, #ffffff 303px, #ffffff 100%);
+    }
+
+    &::after {
+      z-index: -2;
+      display: block;
+      background-image: url("../../images/cat-bg-hero@1x.webp");
+      background-position: 63% -37px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    background-color: #ffffff;
+    .hero {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.hero__container {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
   }
 }
 
@@ -12,11 +50,22 @@
   font-size: 36px;
   line-height: 36px;
   color: $special-color-text;
+  margin: 0;
+  margin-bottom: 25px;
+  text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 27px;
+  }
 
   @media (min-width: $tablet-width) {
     color: $base-color-title;
     font-size: $tablet-size;
     line-height: $tablet-line-height;
+    text-align: left;
+    margin-left: 90px;
+    margin-bottom: 40px;
+    width: 416px;
   }
 }
 
@@ -25,10 +74,33 @@
   line-height: 14px;
   text-transform: uppercase;
   color: $special-color-text;
+  margin: 0;
+  margin-bottom: 29px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     color: $base-color-title;
     font-size: 20px;
     line-height: 20px;
+    text-align: left;
+    margin-left: 90px;
+    margin-bottom: 21px;
+  }
+}
+
+.hero__image {
+  display: block;
+  margin: 0 auto;
+}
+
+.hero__button {
+  @media (min-width: $tablet-width) {
+    z-index: 2;
+    position: absolute;
+    top: 230px;
+    left: 120px;
+    padding: 14px 0;
+    text-align: center;
+    width: 244px;
   }
 }

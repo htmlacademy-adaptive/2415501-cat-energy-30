@@ -1,3 +1,16 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid $border-color;
+
+  @media (min-width:$tablet-width) {
+    border: none;
+    padding: 0;
+  }
+}
+
 .social__item {
   list-style: none;
 }
@@ -21,10 +34,12 @@
 }
 
 .social__link--vk {
+  margin-right: 24px;
   mask-image: url("../../images/icons/stack.svg#vk");
 }
 
 .social__link--youtube {
+  margin-right: 24px;
   mask-image: url("../../images/icons/stack.svg#youtube");
 }
 

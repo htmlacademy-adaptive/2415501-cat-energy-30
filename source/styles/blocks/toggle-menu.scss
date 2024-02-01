@@ -1,2 +1,14 @@
-/*
-.toggle-menu {}x*/
+.toggle-menu {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  z-index: 2;
+  display: block;
+  right: 44px;
+  background-color: #ffffff;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
