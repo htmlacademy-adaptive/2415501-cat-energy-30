@@ -2,12 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px 0;
+  padding-top: 20px;
+  padding-bottom: 18px;
   border-bottom: 1px solid $border-color;
 
   @media (min-width:$tablet-width) {
     border: none;
     padding: 0;
+    margin-left: 43px;
   }
 }
 

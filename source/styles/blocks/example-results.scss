@@ -1,0 +1,19 @@
+.example-results {
+  padding-bottom: 40px;
+
+  @media (min-width:$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 70px;
+  }
+}
+
+.example-results__details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  @media (min-width:$tablet-width) {
+    margin-top: 0;
+  }
+}

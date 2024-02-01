@@ -2,6 +2,58 @@
   min-height: 604px;
 }
 
+.extra__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-bottom: 1px solid #cdcdcd;
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+  }
+
+  @media (min-width:$desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 17px;
+    width: 895px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.extra__items {
+  @media (min-width:$tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width:$desktop-width) {
+    width: 600px;
+    align-items: center;
+  }
+}
+
+
+.extra__item:first-child {
+  border-top: 1px solid #cdcdcd;
+
+  @media (min-width:$tablet-width) {
+    border-top: none;
+  }
+
+  @media (min-width:$desktop-width) {
+    border-top: 1px solid #cdcdcd;
+  }
+}
+
+.extra__item:last-child {
+  @media (min-width:$tablet-width) {
+    border-bottom: none;
+  }
+  @media (min-width:$desktop-width) {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
 .extra__title {
   font-family: $font-title;
   font-weight: 400;
@@ -9,7 +61,7 @@
   line-height: 24px;
   color: $base-color-title;
   margin: 0;
-  padding-top: 26px;
+  padding-top: 25px;
   margin-bottom: 36px;
 
   @media (min-width: $tablet-width) {
@@ -26,6 +78,15 @@
 
 .extra__list {
   list-style: none;
+
+  @media (min-width:$tablet-width) {
+    border: 1px solid #cdcdcd;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width:$desktop-width) {
+    border: none;
+  }
 }
 
 .extra__second-title {
@@ -35,8 +96,63 @@
   line-height: 16px;
   color: $catalog-color-title;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 25px;
+  }
+  @media (min-width:$desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .extra__details {
   line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+
+  @media (min-width:$tablet-width) {
+    width: 223px;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 22px;
+  }
+
+  @media (min-width:$desktop-width) {
+    margin-bottom: 0;
+    align-items: center;
+  }
+}
+
+.extra__weight,
+.extra__price {
+  margin: 0;
+  color: $base-color-text;
+}
+
+.extra__weight {
+  @media (min-width:$tablet-width) {
+    width: 132px;
+    text-align: end;
+  }
+  @media (min-width:$desktop-width) {
+    text-align: start;
+  }
+}
+
+.extra__container {
+  @media (min-width:$desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.extra__button {
+  @media (min-width:$desktop-width) {
+    padding: 10px 90px;
+  }
 }

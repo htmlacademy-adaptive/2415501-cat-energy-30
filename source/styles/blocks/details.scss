@@ -1,11 +1,53 @@
+.details__item {
+  position: relative;
+  margin-bottom: 20px;
+
+  @media (min-width:$tablet-width) {
+    margin-right: 43px;
+  }
+}
+
 .details__value {
   font-family: $font-title;
   font-size: 24px;
   line-height: 24px;
   color: $base-color-title;
+  text-align: center;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+  width: 124px;
+  height: 56px;
+  z-index: 1;
+  position: relative;
+  padding-top: 15px;
+
+  @media (min-width:$tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    width: 162px;
+    height: 73px;
+  }
 }
 
 .details__description {
   font-size: 12px;
   line-height: 12px;
+  color: $base-color-text;
+  margin: 0;
+  z-index: 2;
+  position: absolute;
+  width: 77px;
+  text-align: center;
+  top: 46px;
+  left: 23px;
+  background-color: #eaeaea;
+
+  @media (min-width:$tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    width: 125px;
+    background-color: #ffffff;
+    top: 64px;
+    left: 18px;
+  }
 }

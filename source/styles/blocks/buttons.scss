@@ -9,7 +9,7 @@
 
 .button--primary {
   background-color: $base-color-button;
-  color: $special-color-text;
+  color: $special-color;
   padding: 14px 0;
   display: block;
   text-align: center;
@@ -23,16 +23,12 @@
     background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3);
   }
-
-  @media (max-width: $mobile-width-only) {
-    min-width: 280px;
-  }
-
 }
 
 .button--secondary {
   color: $base-color-text;
   background-color: #f2f2f2;
+  padding: 10px 95px;
 
   &:hover {
     background-color: #ebebeb;
@@ -40,5 +36,9 @@
 
   &:active {
     background-color: #ebebeb;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 10px 39px;
   }
 }
